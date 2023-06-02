@@ -27,7 +27,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/three/build/three.js",
+              "node_modules/three/src/addons/SVGLoader.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -94,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "8ff157f0-d766-4a22-becf-7da57f2ccfe9"
   }
 }

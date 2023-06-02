@@ -1,0 +1,59 @@
+img {
+  width: 35px;
+  padding: 4px;
+  border-radius: 30%;
+  margin: 0.5px;
+  transition: 0.3s ease all;
+  overflow: hidden;
+}
+img:hover {
+  background-color: purple ;
+  -webkit-transform: scale(1.3);
+  transform: scale(1.1);
+}
+
+.redes{
+  justify-content: right;
+}
+li {
+  padding: 10px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  padding-right: 15px;
+  transition: color 0.3s;
+    
+}
+
+a:hover {
+  color: purple;
+
+}
+
+#logo {
+  width: 70px;
+  border-radius: 10px;
+  overflow: none;
+  transition: fill 0.2s;
+  transform: none;
+  background: none;
+  fill: white;
+
+}
+#logo:hover{
+fill: blueviolet;
+
+}
+
+@media (max-width: 991px){
+  .navbar{
+    justify-content: left;
+  }
+}
+@media (min-width: 992px){
+  .navbar{
+       justify-content: center;    
+}
+}
+

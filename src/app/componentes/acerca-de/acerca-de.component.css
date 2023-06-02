@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+*{
+    background-color: black;
+}
+.row{
+    margin-top: 70px;
+}
+
+div{
+    text-align: center;   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+}
+
+
+
+
+
+h1{
+    font-family: 'Dongle', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+}
+
+#texto{
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    color: white;
+}
+button{
+    border-radius: 20px;
+    border: 0px;
+    font-weight: bolder;    
+}
+
+.acerca{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .luna {
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    animation: girar-luna 10s linear infinite;
+  }
+  
+  @keyframes girar-luna {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+/*estilo foto perfil*/
+
+@media (min-width: 576px){
+    #fotoPerfil {        
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;      
+    }
+    }
+
+ @media (max-width: 575px){
+        #fotoPerfil {
+            position: absolute;
+            width: 25%;
+            border-radius: 100%;
+            box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.678);
+            left:36%;
+            top: 235px;
+        }      
+        }
+      
+              @media (min-width: 1200px){
+                #fotoPerfil {
+                    position: absolute;
+                    width: 12%;
+                    border-radius: 100%;
+                    box-shadow: 3px 3px 3px grey;
+                    left:3%;
+                    top: 550px;
+                }
+                }
+           
+            @media (max-width:575px){
+                  #nombre{
+                    font-family: 'Crimson Text', serif;
+                    margin-left: 30px;
+                    margin-top: 23%;
+                    font-size: 50px;
+                    padding-top: 50px;
+                    padding-bottom: 50px ;
+                    color: white;
+                    animation: animacion 3s;
+                    animation-name: slidein;
+                  }
+                  @keyframes slidein {
+                      from {
+                        opacity: 0%;
+                      }
+                    
+                      to {
+                        opacity: 100%;
+                      }
+                    }
+
+                    #titl{
+                        font-family: 'Dongle', sans-serif;
+                        color: rgb(255, 255, 255);
+                        font-size: 40px;
+                        padding-left: 10%;
+                    
+                    }
+                  }
+            
+            @media (min-width:565px){
+                #nombre{
+                  font-family: 'Crimson Text', serif;                 
+                  margin-top: 5%;
+                  padding-top: 50px;
+                  padding-bottom: 50px ;
+                  font-size: 100px;
+                  margin-left: 80px;
+                  color: white;                  
+                  animation: animacion 3s;
+                  animation-name: slidein;
+                }
+                @keyframes slidein {
+                    from {
+                      opacity: 0%;
+                    }
+                  
+                    to {
+                      opacity: 100%;
+                    }
+                  }
+
+                  #titl{
+                    font-family: 'Dongle', sans-serif;
+                    color: rgb(255, 255, 255);
+                    font-size: 60px;
+                    padding-left: 10%;                
+                }
+          }
